@@ -4,10 +4,10 @@
 	function two_branch_sort($hairetsu,$serch_number){
 		for($i=0;$i<count($hairetsu);$i++){
 			if($hairetsu[$i]==$serch_number){
-					return $i+1;
+					return $i;
 			}
 		}
-		return '0';
+		return '-1';
 	}
 
 

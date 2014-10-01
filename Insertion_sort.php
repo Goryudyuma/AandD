@@ -1,5 +1,5 @@
 <?php
-	function Insertion_Sort_A($A){
+	function Insertion_Sort_A(&$A){
 			for($j=1;$j<count($A);$j++){
 					$key=$A[$j];
 				//A[j]をソート列A[1..j-1]に挿入
@@ -10,7 +10,6 @@
 				}
 				$A[$i+1]=$key;
 			}
-			return $A;
 	}
 
 	$hairetsu=array();
@@ -21,7 +20,7 @@
 
 	print_r($hairetsu);
 
-	$hairetsu=Insertion_Sort_A($hairetsu);
+	Insertion_Sort_A($hairetsu);
 
 	print_r($hairetsu);
 	?>

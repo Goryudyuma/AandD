@@ -10,16 +10,12 @@
 			$R = array();
 			for($i = 0;$i < $n1;$i++){
 					$L[]=$A[$left+$i];
-					//array_push($L,$A[$left+$i]);
 			}
 			for($i = 0;$i < $n2;$i++){
 					$R[]=$A[$mid+$i];
-					//array_push($R,$A[$mid+$i]);
 			}
 			$L[]=1000000001;
 			$R[]=1000000001;
-			//array_push($L,1000000001);
-			//array_push($R,1000000001);
 			$i = 0;
 			$j = 0;
 			for($k = $left;$k < $right;$k++){

@@ -9,13 +9,17 @@
 			$L = array();
 			$R = array();
 			for($i = 0;$i < $n1;$i++){
-					array_push($L,$A[$left+$i]);
+					$L[]=$A[$left+$i];
+					//array_push($L,$A[$left+$i]);
 			}
 			for($i = 0;$i < $n2;$i++){
-					array_push($R,$A[$mid+$i]);
+					$R[]=$A[$mid+$i];
+					//array_push($R,$A[$mid+$i]);
 			}
-			array_push($L,1000000001);
-			array_push($R,1000000001);
+			$L[]=1000000001;
+			$R[]=1000000001;
+			//array_push($L,1000000001);
+			//array_push($R,1000000001);
 			$i = 0;
 			$j = 0;
 			for($k = $left;$k < $right;$k++){
@@ -44,11 +48,10 @@
 	$num=fgets(STDIN);
 	for($i=0;$i<$max;$i++){
 			if($i==0){
-					$n=strtok($num," ");
+					$A[]=(int)strtok($num," ");
 			}else{
-					$n=strtok(" ");
+					$A[]=(int)strtok(" ");
 			}
-			array_push($A,(int)$n);
 	}
 	
 	Merge_Sort($A,0,$max);
@@ -63,5 +66,3 @@
 	}
 	printf("%d\n",$count);
 	?>
-
-

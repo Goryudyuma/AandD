@@ -1,6 +1,7 @@
 <?php
 	function Selection_Sort(&$A){
 			for($i=0;$i<count($A)-1;$i++){
+					//echo $i."\n";
 					$min=$A[$i];
 					$key=$i;
 					for($j=$i+1;$j<count($A);$j++){
@@ -15,7 +16,7 @@
 	}
 
 	$A=array();
-	for($i=0;$i<100;$i++){
+	for($i=0;$i<1000;$i++){
 			array_push($A,rand());
 	}
 	print_r($A);

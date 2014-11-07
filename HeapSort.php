@@ -42,7 +42,7 @@
 
 	$hairetsu=array();
 	array_push($hairetsu,0);
-	for($i=0;$i<10000;$i++){
+	for($i=0;$i<100;$i++){
 		array_push($hairetsu,rand());
 	}
 
